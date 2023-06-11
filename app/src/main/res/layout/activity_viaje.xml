@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9BBCB8"
+    tools:context=".ViajeActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:text="Viaje Cartagena" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvmen1"
+                android:layout_width="340dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#E53935"
+                android:textStyle="italic|bold"
+                android:text="Cantidad personas"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/etcantidad"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:ems="10"
+                android:hint="Cantidad Personas"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/tvmen2"
+                android:layout_width="340dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#E53935"
+                android:textStyle="italic|bold"
+                android:text="Valor persona"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/etvalor"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:ems="10"
+                android:hint="Valor Persona"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvmen3"
+                android:layout_width="340dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#E53935"
+                android:textStyle="italic|bold"
+                android:text="Valor bruto"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/tvbruto"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:hint="Valor bruto" />
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbiva"
+                    android:layout_width="34dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="Aplica IVA" />
+
+                <TextView
+                    android:id="@+id/tviva"
+                    android:layout_width="34dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:hint="Iva" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbdescuento"
+                    android:layout_width="34dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Aplica descuento"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvdescuento"
+                    android:layout_width="34dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:hint="Descuento" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvmen4"
+                android:layout_width="340dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#E53935"
+                android:textStyle="italic|bold"
+                android:text="Valor neto"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/tvneto"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:hint="Valor neto" />
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btcalcular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|italic"
+                    android:layout_marginRight="5dp"
+                    android:onClick="calcular"
+                    android:layout_weight="1"
+                    android:text="Calcular" />
+
+                <Button
+                    android:id="@+id/btlimpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="limpiar"
+                    android:layout_weight="1"
+                    android:text="Limpiar" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btregresar"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:onClick="regresar"
+                android:layout_height="55dp"
+                android:text="REGRESAR" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

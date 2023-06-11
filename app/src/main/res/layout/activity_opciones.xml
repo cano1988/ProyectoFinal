@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9BBCB8"
+    tools:context=".OpcionesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btviaje"
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="120dp"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:onClick="viaje"
+                android:layout_height="100dp"
+                android:text="Viaje a cartagena con constructores" />
+
+            <Button
+                android:id="@+id/btservicios"
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:onClick="servicios"
+                android:layout_height="100dp"
+                android:text="Servicios públicos con encapsulamiento" />
+
+
+            <Button
+                android:id="@+id/btregresar"
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="60dp"
+                android:onClick="regresar"
+                android:layout_height="55dp"
+                android:text="Regresar" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BBCB8"
+    android:orientation="vertical"
+    tools:context=".ServiciosActivity">
+
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:text="Servicios públicos" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+      <LinearLayout
+          android:layout_width="340dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal">
+
+          <TextView
+              android:id="@+id/tvmen1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="#E53935"
+              android:textStyle="italic|bold"
+              android:text="Cantidad m^3 agua"
+              android:visibility="invisible"/>
+          <TextView
+              android:id="@+id/tvmen2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="#E53935"
+              android:textStyle="italic|bold"
+              android:text="Valor m^3 agua"
+              android:visibility="invisible"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="340dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center"
+          android:orientation="horizontal">
+
+
+          <EditText
+              android:id="@+id/etcant_agua"
+              android:layout_width="wrap_content"
+              android:layout_height="55dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:ems="10"
+              android:hint="Cantidad m^3 agua"
+              android:inputType="numberDecimal" />
+
+          <EditText
+              android:id="@+id/etval_agua"
+              android:layout_width="wrap_content"
+              android:layout_height="55dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:ems="10"
+              android:hint="Valor m^3 agua"
+              android:inputType="numberDecimal" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="340dp"
+          android:layout_height="20dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal">
+
+          <TextView
+              android:id="@+id/tvmen3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="#E53935"
+              android:textStyle="italic|bold"
+              android:text="Cantidad kilovatios"
+              android:visibility="invisible"/>
+          <TextView
+              android:id="@+id/tvmen4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="#E53935"
+              android:textStyle="italic|bold"
+              android:text="Valor kilovatio"
+              android:visibility="invisible"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="340dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center"
+          android:orientation="horizontal">
+
+
+          <EditText
+              android:id="@+id/etcant_kilov"
+              android:layout_width="wrap_content"
+              android:layout_height="55dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:ems="10"
+              android:hint="Cantidad kilovatios"
+              android:inputType="numberDecimal" />
+
+          <EditText
+              android:id="@+id/etval_kilov"
+              android:layout_width="wrap_content"
+              android:layout_height="55dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:ems="10"
+              android:hint="Valor kilovatio"
+              android:inputType="numberDecimal" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/tvmen5"
+          android:layout_width="340dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:textColor="#E53935"
+          android:textStyle="italic|bold"
+          android:text="Valor bruto"
+          android:visibility="invisible"/>
+
+
+      <TextView
+          android:id="@+id/tvbruto"
+          android:layout_width="340dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:text="Valor bruto" />
+
+      <TextView
+          android:id="@+id/tvestrato"
+          android:layout_width="340dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:text="Estrato" />
+
+      <Spinner
+          android:id="@+id/spestrato"
+          android:layout_width="320dp"
+          android:layout_gravity="center"
+          android:layout_height="45dp"
+          android:layout_marginTop="10dp"
+          />
+      <TextView
+          android:id="@+id/tvconsumo"
+          android:layout_width="340dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:text="Consumo agua" />
+
+      <Spinner
+          android:id="@+id/spconsu_agua"
+          android:layout_width="320dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:layout_height="45dp" />
+
+      <TextView
+          android:id="@+id/tvconkilov"
+          android:layout_width="340dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:text="Consumo kilovatios" />
+
+      <Spinner
+          android:id="@+id/spconsu_kilov"
+          android:layout_width="320dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:layout_height="45dp" />
+      <TextView
+          android:id="@+id/tvmen6"
+          android:layout_width="340dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:textColor="#E53935"
+          android:textStyle="italic|bold"
+          android:text="Subsidio"
+          android:visibility="invisible"/>
+      <TextView
+          android:id="@+id/tvsubsidio"
+          android:layout_width="370dp"
+          android:layout_height="55dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textSize="24sp"
+          android:hint="Subsidio" />
+      <TextView
+          android:id="@+id/tvmen7"
+          android:layout_width="340dp"
+          android:layout_height="20dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:textColor="#E53935"
+          android:textStyle="italic|bold"
+          android:text="Valor total"
+          android:visibility="invisible"/>
+
+      <TextView
+          android:id="@+id/tvtotal"
+          android:layout_width="370dp"
+          android:layout_height="55dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:layout_marginTop="10dp"
+          android:textSize="24sp"
+          android:hint="Valor total" />
+
+      <LinearLayout
+          android:layout_width="340dp"
+          android:layout_height="50dp"
+          android:layout_marginTop="15dp"
+          android:layout_gravity="center"
+          android:orientation="horizontal">
+
+          <Button
+              android:id="@+id/btcalcular"
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:textSize="25dp"
+              android:backgroundTint="@color/black"
+              android:textColor="@color/white"
+              android:textStyle="bold|italic"
+              android:layout_marginRight="5dp"
+              android:onClick="calcular"
+              android:layout_weight="1"
+              android:text="Calcular" />
+
+          <Button
+              android:id="@+id/btlimpiar"
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:textSize="25dp"
+              android:backgroundTint="@color/black"
+              android:textColor="@color/white"
+              android:textStyle="bold|italic"
+              android:layout_marginLeft="5dp"
+              android:onClick="limpiar"
+              android:layout_weight="1"
+              android:text="Limpiar" />
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btregresar"
+          android:layout_width="300dp"
+          android:layout_gravity="center"
+          android:textSize="25dp"
+          android:backgroundTint="@color/black"
+          android:textColor="@color/white"
+          android:textStyle="bold|italic"
+          android:onClick="regresar"
+          android:layout_height="50dp"
+          android:text="REGRESAR" />
+
+
+  </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+</LinearLayout>
